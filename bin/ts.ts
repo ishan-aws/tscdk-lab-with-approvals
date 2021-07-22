@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 import * as cdk from '@aws-cdk/core';
-import { TsStack } from '../lib/ts-stack';
+import {LambdaApiDev} from '../lib/demo-api'
+import {PipelineStack} from "../lib/pipeline-stack";
 
 const app = new cdk.App();
-new TsStack(app, 'TsStack');
+new PipelineStack(app, 'TsPipelineStack')
+
+
+
+
